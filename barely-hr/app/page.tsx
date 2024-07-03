@@ -8,16 +8,37 @@ export default function Home(){
 
 function Testimonial(){
   return(
-    <div>
-      <h2>What everyone is saying</h2>
-      <p>Trusted by professionals</p>
-      <div>cards ...</div>
-      <div>
-        <p>
-          Join professionals who trust BarelyHR for hiring and onboarding new employees.
-        </p>
+    <div className="py-32 px-28">
+      <h2 className="text-xs/4 font-mono font-medium tracking-widest text-gray-500 uppercase">What everyone is saying</h2>
+      <p className="mt-2 text-6xl font-medium tracking-tighter">Trusted by professionals</p>
+      <div className="mt-16">
+        cards ...
+      </div>
+      <div className="mt-16 flex justify-between">
         <div>
-          <a href="#">Get started &rarr;</a>
+          <p className="text-sm/6 text-gray-600">
+            Join professionals who trust BarelyHR for hiring and onboarding new employees.
+          </p>
+          <div className="mt-2">
+            <a className="flex gap-2 items-center text-pink-600 text-sm/6 font-medium" href="#">
+              Get started
+              <svg viewBox="0 0 20 20" fill="currentColor" className="size-5">
+                <path fillRule="evenodd" d="M2 10a.75.75 0 0 1 .75-.75h12.59l-2.1-1.95a.75.75 0 1 1 1.02-1.1l3.5 3.25a.75.75 0 0 1 0 1.1l-3.5 3.25a.75.75 0 1 1-1.02-1.1l2.1-1.95H2.75A.75.75 0 0 1 2 10Z" clipRule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div className="flex gap-4">
+          <button aria-label="prev-button" className="inline-flex size-12 rounded-full justify-center items-center ring ring-gray-950/10 shadow-sm cursor-pointer">
+          <svg viewBox="0 0 16 16" className="size-4 fill-gray-950">
+            <path fillRule="evenodd" d="M9.78 4.22a.75.75 0 0 1 0 1.06L7.06 8l2.72 2.72a.75.75 0 1 1-1.06 1.06L5.47 8.53a.75.75 0 0 1 0-1.06l3.25-3.25a.75.75 0 0 1 1.06 0Z" clipRule="evenodd" />
+          </svg>
+          </button>
+          <button aria-label="next-button" className="inline-flex size-12 rounded-full justify-center items-center ring ring-gray-950/10 shadow-sm cursor-pointer">
+          <svg viewBox="0 0 16 16" className="size-4">
+            <path fillRule="evenodd" d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" />
+          </svg>
+          </button>
         </div>
       </div>
     </div>
